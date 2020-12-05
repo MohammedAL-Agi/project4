@@ -68,6 +68,7 @@
 	box-shadow: 4px 4px 4px azure;
 	overflow: hidden;
 	color: var(--First-color);
+	position: relative;
 }
 
 .card-info h4 {
@@ -112,6 +113,8 @@
 	border: var(--Second-color) 2px solid;
 	color: var(--Fourth-color);
 	font-family: 'Sansita Swashed', cursive;
+	position: absolute;
+	bottom: 0;
 }
 
 .btnBooking:hover {

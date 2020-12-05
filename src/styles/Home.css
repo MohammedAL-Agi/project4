@@ -18,7 +18,7 @@
 
 .home__container {
 	width: 100%;
-	background-color: #81bcba;
+	/* background-color: #81bcba; */
 	/* height: 1500px; */
 	/* width: 700px;
 	margin: 0 auto; */
@@ -41,10 +41,10 @@
 .contentText {
 	position: absolute;
 	top: 10%;
-	padding: 2rem;
+	padding: 1rem;
 	left: 10%;
-	background: rgba(167, 36, 36, 0.5);
-	color: #f1f1f1;
+	background: #123468ad;
+	color: #fff;
 }
 
 /* Start style video */
@@ -53,11 +53,15 @@
 .Our_services h1 {
 	font-family: 'Sansita Swashed', cursive;
 	text-align: center;
+	padding-bottom: 3rem;
+}
+
+.Our_services {
+	padding-top: 2rem;
 }
 
 .profiles {
 	display: flex;
-	/* justify-content: space-evenly; */
 	justify-content: center;
 	margin: 0 auto;
 }
@@ -70,8 +74,12 @@
 .profile .services-img {
 	height: 13rem;
 	width: 13rem;
-	border-radius: 50%;
+	border-radius: 35%;
 	cursor: pointer;
+}
+
+.user-name-services {
+	font-size: 1.3em;
 }
 
 .profile .profile-img {
@@ -88,13 +96,64 @@
 }
 
 .user-name {
-	margin-top: 1rem;
-	font-size: 20px;
+	font-size: 1em;
 }
 
-.Our_team h1 {
+.our_amazing_team h3 {
+	padding-bottom: 3rem;
+}
+
+.Our_team {
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.container123 {
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-top: 2rem;
+}
+
+#ref {
 	font-family: 'Sansita Swashed', cursive;
 	text-align: center;
+	padding-top: 3rem;
+}
+
+.content {
+	background-color: #81bcba7a;
+	width: 338px;
+	border-radius: 4px;
+	height: 360px;
+	margin: 10px;
+	padding: 1rem;
+	/* padding-top: 5rem; */
+}
+
+.content p {
+	font-size: 1.5rem;
+}
+
+.author {
+	margin-top: 3rem;
+}
+
+.author img {
+	width: 75px;
+	height: 75px;
+	/* float: left; */
+	border-radius: 50%;
+	margin-top: -1.5rem;
+}
+
+.author span {
+	/* text-align: center; */
+	font-size: 1.2em;
+	padding-left: 1rem;
 }
 
 @media screen and (max-width: 480px) and (min-width: 280px) {
@@ -102,24 +161,39 @@
 		flex-direction: column;
 	}
 
+	.content {
+		width: 280px;
+		margin: 0;
+		margin-top: 2rem;
+		font-size: 13px;
+	}
+
+	.content p {
+		font-size: 1.7em;
+	}
+
 	.profile {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	.container123 {
-		width: 100vw;
+
+	.contentText {
+		left: 0;
 	}
+
 	.header__video video {
 		width: 100vw;
 	}
 }
+
 /*Mobile devices*/
 @media screen and (max-width: 768px) and (min-width: 480px) {
 	.profile .services-img {
 		height: 9rem;
 		width: 9rem;
 	}
+
 	.profiles {
 		flex-direction: column;
 	}
@@ -129,19 +203,23 @@
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.header__video video {
 		width: 100vw;
 	}
 }
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
 	.profile .services-img {
 		height: 9rem;
 		width: 9rem;
 	}
+
 	.profiles {
 		width: 100vw;
 		flex-direction: row;
 		overflow: hidden;
+		padding-top: 2rem;
 	}
 
 	.profile {
@@ -151,19 +229,22 @@
 		align-items: center;
 		flex-wrap: wrap;
 	}
+
 	.header__video video {
 		width: 100vw;
 	}
+
 	.buttom__profile {
 		width: 7rem !important;
 		height: 7rem !important;
-		margin-bottom: 3rem;
 	}
+
 	.buttom__profile img {
 		width: 7rem !important;
 		height: 7rem !important;
 	}
 }
+
 /*Desktops, large screens*/
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
 }
@@ -191,51 +272,3 @@
 		align-items: center;
 	}
 } */
-
-/* ===========================================*/
-.container123 {
-	width: 100%;
-	background-color: coral;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-#ref {
-	font-family: 'Sansita Swashed', cursive;
-	text-align: center;
-}
-
-.content {
-	background-color: #fff;
-	width: 338px;
-	height: 380px;
-	margin: 10px;
-	padding: 2rem;
-	/* padding-top: 5rem; */
-}
-.content p {
-	/* border-left: 10px solid #ccc; */
-	/* padding-left: 30px; */
-
-	font-size: 1.5rem;
-}
-
-.author {
-	margin-top: 3rem;
-}
-.author img {
-	width: 75px;
-	height: 75px;
-	/* float: left; */
-	border-radius: 50%;
-	margin-top: -1.5rem;
-}
-
-.author span {
-	/* text-align: center; */
-	color: #fff;
-	background-color: black;
-}
-
-/* ===========================================*/

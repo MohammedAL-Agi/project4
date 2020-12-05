@@ -15,6 +15,17 @@ function Profile() {
 	let storedName = userData.name;
 	let storedEmail = userData.email;
 	let storedNumber = userData.phoneNumber;
+	//=================================================================================================== booking info
+	let bookingData;
+	if (sessionStorage.getItem('Data') === null) {
+		bookingData = JSON.parse(localStorage.getItem('Data'));
+	} else {
+		bookingData = JSON.parse(sessionStorage.getItem('Data'));
+	}
+	let storedChalet = bookingData.name;
+	let storedChaletInfo = bookingData.info;
+	let storedImage = bookingData.img;
+
 	if (isUser) {
 		return (
 			<div className="page__container">
@@ -50,29 +61,21 @@ function Profile() {
 						<WeatherRun />
 					</div>
 				</div>
+				<h4 className="booked__title">Booked Chalite</h4>
 
-				<div className="booked__section">
-					<h4 className="booked__title">Booked Chalite</h4>
-
-					<div className="box">
-						<div className="chalite__img">
-							{/* <img src={villa} alt="" /> */}
-							<p className="chalite__name"> Chalite</p>
+				<div className="booked__bottom">
+					<div className="l__section">
+						<div className="image__bot__sec">
+							<img src={storedImage} alt="booked chalet" />
 						</div>
-
-						<div className="descrebtion">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-							incidunt itaque quos
+						<div className="chalet__name_">
+							<span style={{ fontStyle: 'bold', fontSize: 20 }}>
+								{storedChalet}
+							</span>
 						</div>
-
-						{/* <div className="chalite__img">
-						<img src={villa} alt="" />
-						<p className="chalite__name" > Chalite</p>
 					</div>
-
-					<div className="descrebtion">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Id incidunt itaque quos
-                    </div> */}
+					<div className="r__section">
+						<div className="t__rsection">{storedChaletInfo}</div>
 					</div>
 				</div>
 			</div>

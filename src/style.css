@@ -136,10 +136,11 @@ footer {
 }
 
 .footer__description {
-	text-align: center;
+	text-align: left;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 13px;
 }
 
 .footer__mid {
@@ -229,8 +230,7 @@ footer {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 }
-.userName {
-}
+
 .userName__right {
 	display: flex;
 	align-items: center;
@@ -278,6 +278,11 @@ footer {
 .dropdown:hover .dropdown-content {
 	display: block;
 }
+.social__media img {
+	width: 3rem;
+	height: 3rem;
+	margin: 0.5rem;
+}
 /*Mobile devices*/
 @media screen and (max-width: 480px) and (min-width: 320px) {
 	footer {
@@ -318,6 +323,16 @@ footer {
 	.userName__right {
 		width: 5rem;
 	}
+	.footer__logo {
+		padding: 0;
+	}
+	.footer__logo img {
+		height: 3rem !important;
+		width: 3rem !important;
+	}
+	.footer__description {
+		font-size: 11px;
+	}
 }
 /*Mobile devices*/
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -343,6 +358,9 @@ footer {
 		height: 35%;
 		width: 100%;
 		font-size: 12px;
+	}
+	.footer__logo {
+		padding: 0;
 	}
 }
 /*Small screens, laptops*/

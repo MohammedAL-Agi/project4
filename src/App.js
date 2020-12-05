@@ -18,6 +18,8 @@ localStorage.setItem(
 	'user',
 	JSON.stringify({ name: '', password: '', email: '', phoneNumber: '' })
 );
+
+localStorage.setItem('Data', JSON.stringify({ name: '', info: '' }));
 function App() {
 	return (
 		<Router basename="/">

@@ -18,7 +18,11 @@ function Nav() {
 			<div className="nav__left">
 				<div className="Nav__image">
 					<Link to="/">
-						<img src="../Images/logo.png" alt="" className="LogoWebsite" />
+						<img
+							src="../Images/logo.png"
+							alt="logo jmom"
+							className="LogoWebsite"
+						/>
 					</Link>
 				</div>
 
