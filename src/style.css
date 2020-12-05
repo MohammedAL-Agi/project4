@@ -54,7 +54,7 @@ nav a {
 	font-family: 'Sansita Swashed', cursive;
 }
 .home__nav_btn {
-	margin-right: 2rem;
+	margin-right: 1.3rem;
 }
 
 .nav__title {
@@ -225,13 +225,11 @@ footer {
 	display: block;
 }
 .loggedIn {
-	margin-right: 40px;
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: space-between;
 }
 .userName {
-	margin-right: 20px;
 }
 .userName__right {
 	display: flex;
@@ -309,13 +307,16 @@ footer {
 		font-size: 14px;
 	}
 	.nav__left {
-		width: 11rem;
+		width: 20rem;
 	}
 	.nav__left a {
 		font-size: 15px;
 	}
 	.Nav__image {
 		margin-right: 0;
+	}
+	.userName__right {
+		width: 5rem;
 	}
 }
 /*Mobile devices*/

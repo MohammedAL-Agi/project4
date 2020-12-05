@@ -26,7 +26,7 @@ function Nav() {
 					<a className="home__nav_btn">Home</a>
 				</Link>
 				<Link to="/Services">
-					<a>Services</a>
+					<a className="home__nav_btn">Services</a>
 				</Link>
 			</div>
 
