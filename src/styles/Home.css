@@ -1,3 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap');
+
+:root {
+	--First-color: #00317a;
+	--Second-color: #123468;
+	--Third-color: #214685;
+	--Fourth-color: #dcdcdc;
+	--Fifth-color: #81bcba;
+	--Sixth-color: #81bcba46;
+	--Seventh-color: #16375bb4;
+	--Eighth-color: #f8f9fab4;
+}
+
+/* color: var(--First-color); */
+
+/* font-family: 'Sansita Swashed',
+        cursive; */
+
 .home__container {
 	width: 100%;
+	background-color: #81bcba;
+	/* height: 1500px; */
+	/* width: 700px;
+	margin: 0 auto; */
 }
+
+/* Start style video */
+.header__video {
+	width: 100%;
+	height: 40rem;
+	position: relative;
+}
+
+.header__video video {
+	width: 98.9vw;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+}
+
+.contentText {
+	position: absolute;
+	top: 10%;
+	padding: 2rem;
+	left: 10%;
+	background: rgba(167, 36, 36, 0.5);
+	color: #f1f1f1;
+}
+
+/* Start style video */
+/* ============================================================= */
+
+.Our_services h1 {
+	font-family: 'Sansita Swashed', cursive;
+	text-align: center;
+}
+
+.profiles {
+	display: flex;
+	/* justify-content: space-evenly; */
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.profile {
+	flex-basis: 260px;
+	text-align: center;
+}
+
+.profile .services-img {
+	height: 13rem;
+	width: 13rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.profile .profile-img {
+	height: 11rem;
+	width: 11rem;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	cursor: pointer;
+	transition: 400ms;
+}
+
+.profile:hover .profile-img {
+	filter: grayscale(0);
+}
+
+.user-name {
+	margin-top: 1rem;
+	font-size: 20px;
+}
+
+.Our_team h1 {
+	font-family: 'Sansita Swashed', cursive;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+	.profiles {
+		flex-direction: column;
+	}
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.container123 {
+		width: 100vw;
+	}
+	.header__video video {
+		width: 100vw;
+	}
+}
+/*Mobile devices*/
+@media screen and (max-width: 768px) and (min-width: 480px) {
+	.profile .services-img {
+		height: 9rem;
+		width: 9rem;
+	}
+	.profiles {
+		flex-direction: column;
+	}
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header__video video {
+		width: 100vw;
+	}
+}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.profile .services-img {
+		height: 9rem;
+		width: 9rem;
+	}
+	.profiles {
+		width: 100vw;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	.profile {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.header__video video {
+		width: 100vw;
+	}
+	.buttom__profile {
+		width: 7rem !important;
+		height: 7rem !important;
+		margin-bottom: 3rem;
+	}
+	.buttom__profile img {
+		width: 7rem !important;
+		height: 7rem !important;
+	}
+}
+/*Desktops, large screens*/
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+}
+
+/* @media only screen and (max-width: 1024px) {
+	.header__video video {
+		width: 100vw;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.container123 {
+		width: 99%;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.profiles {
+		flex-direction: column;
+	}
+
+	.profile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+} */
+
+/* ===========================================*/
+.container123 {
+	width: 100%;
+	background-color: coral;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#ref {
+	font-family: 'Sansita Swashed', cursive;
+	text-align: center;
+}
+
+.content {
+	background-color: #fff;
+	width: 338px;
+	height: 380px;
+	margin: 10px;
+	padding: 2rem;
+	padding-top: 5rem;
+}
+.content p {
+	border-left: 10px solid #ccc;
+	padding-left: 30px;
+	font-size: 1.5rem;
+}
+
+.author {
+	margin-top: 30px;
+}
+.author img {
+	width: 75px;
+	height: 75px;
+	/* float: left; */
+	border-radius: 50%;
+	margin-top: -1.5rem;
+}
+
+.author span {
+	/* text-align: center; */
+	color: #fff;
+	background-color: black;
+}
+
+/* ===========================================*/

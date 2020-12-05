@@ -29,33 +29,37 @@ input {
 }
 
 .big__container {
-	width: 100vw;
 	min-height: 100vh;
 	position: relative;
 }
-/*button reset styling*/
 
+ul,
+li {
+	margin-bottom: 0 !important;
+}
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:hover {
+	text-decoration: none;
+	color: #333;
+}
 nav {
 	background-color: #ffffff;
 	width: 100%;
 	height: 3rem;
 	display: flex;
-	padding: 0px 15px;
+	padding: 0 0.5rem;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #dbdbdb;
 }
-nav ul {
+.nav__left {
+	width: 12rem;
 	display: flex;
-	list-style: none;
+	justify-content: space-between;
 	align-items: center;
-}
-nav li {
-	margin-right: 1rem;
-	color: #333;
-}
-h2 {
-	color: #333;
 }
 nav button {
 	background: #333;
@@ -82,7 +86,7 @@ footer {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	overflow: hidden;
 }
@@ -123,6 +127,63 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
+.loggedIn {
+	margin-right: 40px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+.userName {
+	margin-right: 5px;
+}
+.userName__right {
+	display: flex;
+	align-items: center;
+}
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 0px 12px;
+	z-index: 1;
+}
+.dropdown-content p {
+	font-size: 14px;
+}
+.dropdown-content p:hover {
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
 /*Mobile devices*/
 @media screen and (max-width: 480px) and (min-width: 320px) {
 	footer {
@@ -148,9 +209,18 @@ footer {
 		font-size: 12px;
 		padding: 0;
 	}
+	.userName h4 {
+		font-size: 14px;
+	}
+	.nav__left {
+		width: 11rem;
+	}
+	.nav__left a {
+		font-size: 15px;
+	}
 }
 /*Mobile devices*/
-@media screen and (max-width: 768px) and (min-width: 480px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
 	footer {
 		flex-direction: column-reverse;
 		flex-wrap: wrap;

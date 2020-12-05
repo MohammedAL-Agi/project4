@@ -6,18 +6,21 @@ import Home from './components/Home';
 import Services from './components/Services';
 import Register from './components/Regitster';
 import Footer from './components/Footer';
-import Profilee from './components/Profile';
+import Profile from './components/Profile';
+
 import {
 	HashRouter,
 	BrowserRouter as Router,
 	Switch,
 	Route,
 } from 'react-router-dom';
-import Profile from './components/Profile';
-
+localStorage.setItem(
+	'user',
+	JSON.stringify({ name: '', password: '', email: '', phoneNumber: '' })
+);
 function App() {
 	return (
-		<HashRouter basename="/">
+		<Router basename="/">
 			<div className="big__container">
 				<Mynav />
 				<Switch>
@@ -28,7 +31,7 @@ function App() {
 				</Switch>
 				<Footer />
 			</div>
-		</HashRouter>
+		</Router>
 	);
 }
 

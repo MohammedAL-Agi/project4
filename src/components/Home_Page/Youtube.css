@@ -1,0 +1,32 @@
+
+iframe{
+    width: 400px;
+    height: 300px;
+    border-radius: 1.2rem;
+    margin : 1rem 0 ;
+}
+
+.youtube{
+    display: inline;
+    width: 100%;
+    margin: 3rem;
+
+}
+
+.btn-1{
+    text-align: center;
+    /* height: 10rem; */
+    padding: 10px 0 ;
+}
+
+
+@media screen and (min-width: 310px) and (max-width: 480px) {
+    iframe {
+        width: 372px;
+        height: 300px;
+    }
+    .youtube{
+        margin: 0;
+    }
+}
+
