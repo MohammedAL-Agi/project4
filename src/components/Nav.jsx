@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../style.css';
 import { Link } from 'react-router-dom';
+import { FaUserCircle, FaSignOutAlt } from 'react-icons/fa';
 
 function Nav() {
 	let isUser = JSON.parse(sessionStorage.getItem('isUser'));
@@ -15,14 +16,14 @@ function Nav() {
 	return (
 		<nav>
 			<div className="nav__left">
-				<Link to="/">
-					<a>
-						<h2>Logo</h2>
-					</a>
-				</Link>
+				<div className="Nav__image">
+					<Link to="/">
+						<img src="../Images/logo.png" alt="" className="LogoWebsite" />
+					</Link>
+				</div>
 
 				<Link to="/">
-					<a>Home</a>
+					<a className="home__nav_btn">Home</a>
 				</Link>
 				<Link to="/Services">
 					<a>Services</a>
@@ -52,12 +53,17 @@ function Nav() {
 				>
 					<div className="userName">
 						<h4>
-							Hello:{' '}
 							<div className="dropdown">
-								<span style={{ color: 'red' }}>{storedName}</span>
+								<span style={{ color: '#00317a' }}>
+									{' '}
+									<FaUserCircle /> {storedName}
+								</span>
 								<div class="dropdown-content">
 									<Link to="/Profile">
-										<p>Profile</p>
+										<p style={{ color: '#212529' }}>
+											<FaUserCircle />
+											Profile
+										</p>
 									</Link>
 
 									<p
@@ -66,6 +72,7 @@ function Nav() {
 											window.location.reload(false);
 										}}
 									>
+										<FaSignOutAlt />
 										sign out
 									</p>
 								</div>
