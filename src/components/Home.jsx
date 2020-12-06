@@ -1,5 +1,11 @@
 import React from 'react';
 import '../styles/Home.css';
+import icon1 from "../Images/icon1.png"
+import icon2 from "../Images/icon2.jpg"
+import icon3 from "../Images/icon3.png"
+import rami from "../Images/rami.jpg"
+import mohammad from "../Images/mohammad.jpg"
+import khadejah from "../Images/khadejah.jpg"
 
 import Chalet from '../components/video/Chalet.mp4';
 import Youtube from './Home_Page/Youtube';
@@ -29,24 +35,24 @@ function Home() {
 
 				<div className="profiles">
 					<div className="profile">
-						<img src="https://picsum.photos/200" className="services-img" />
-						<h3 className="user-name-services">Abu Sameer Chalet </h3>
+						<img src={icon1} className="services-img" alt="services icon" />
+						<p className="user-name-services">Shop with confidence</p>
 					</div>
 
 					<div className="profile">
-						<img src="https://picsum.photos/200" className="services-img" />
-						<h3 className="user-name-services">Sabah Aleel Chalet</h3>
+						<img src={icon2} className="services-img" alt="services icon" />
+						<p className="user-name-services">Pay the way you want</p>
 					</div>
 
 					<div className="profile">
-						<img src="https://picsum.photos/200" className="services-img" />
-						<h3 className="user-name-services">Abo Ahmed Chalet</h3>
+						<img src={icon3} className="services-img" alt="services icon" />
+						<p className="user-name-services">Instant booking</p>
 					</div>
 				</div>
 			</div>
 			{/* ================= Our_services =========================================== */}
 			<div className="testimoials">
-				<h1 id="ref">Testimonials</h1>
+				<h2 id="ref">Testimonials</h2>
 			</div>
 			<div id="card" className="container123">
 				<section>
@@ -57,7 +63,7 @@ function Home() {
 							will be back.
 						</p>
 						<div className="author">
-							<img src="https://picsum.photos/200" alt="" />
+							<img src={rami} alt="testimoials-User" />
 							<span>Rami Abu Al-Samen</span>
 						</div>
 					</div>
@@ -69,7 +75,7 @@ function Home() {
 							faultlessly and we never had to wait.
 						</p>
 						<div className="author">
-							<img src="https://picsum.photos/200" alt="" />
+							<img src={mohammad} alt="testimoials-User" />
 							<span>Mohammad Alshwaiki</span>
 						</div>
 					</div>
@@ -81,7 +87,7 @@ function Home() {
 							/ excellent service provided by all of your staff, Thank you JMOM.
 						</p>
 						<div className="author">
-							<img src="https://picsum.photos/200" alt="" />
+							<img src={khadejah} alt="testimoials-User" />
 							<span>Khadeejah Hammdan</span>
 						</div>
 					</div>
@@ -92,7 +98,7 @@ function Home() {
 
 			<div className="Our_team">
 				<div className="our_amazing_team">
-					<h3>Our amazing team</h3>
+					<h2>Our amazing team</h2>
 				</div>
 
 				<div className="profiles">
@@ -101,7 +107,7 @@ function Home() {
 							src="https://avatars1.githubusercontent.com/u/71769944?s=400&u=fd9f6f19861dbb2a0d1b72646faeb0b6386c7d70&v=4"
 							className="profile-img"
 						/>
-						<h3 className="user-name">Mohammad</h3>
+						<p className="user-name">Mohammad</p>
 					</div>
 
 					<div className="profile buttom__profile">
@@ -109,7 +115,7 @@ function Home() {
 							src="https://avatars1.githubusercontent.com/u/67992414?s=400&u=c503c163561fb011dcfeac3d7b475735582b35c8&v=4"
 							className="profile-img"
 						/>
-						<h3 className="user-name">Osama</h3>
+						<p className="user-name">Osama</p>
 					</div>
 
 					<div className="profile buttom__profile">
@@ -118,7 +124,7 @@ function Home() {
 							className="profile-img"
 						/>
 
-						<h3 className="user-name">Mohammad Al-Agi</h3>
+						<p className="user-name">Mohammad Al-Agi</p>
 					</div>
 
 					<div className="profile buttom__profile">
@@ -137,30 +143,3 @@ function Home() {
 	);
 }
 export default Home;
-
-// <div className="Out_team">
-// 	<div className="card1">
-// 		<img src="https://picsum.photos/200" alt="img" className="image"/>
-// 		<div className="data">
-// 			<p>Mohammad Alzoubi</p>
-// 		</div>
-// 	</div>
-// 	<div className="card1">
-// 		<img src="https://picsum.photos/200" alt="img" className="image"/>
-// 		<div className="data">
-// 			<p>Mohammad Alzoubi</p>
-// 		</div>
-// 	</div>
-// 	<div className="card1">
-// 		<img src="https://picsum.photos/200" alt="img" className="image"/>
-// 		<div className="data">
-// 			<p>Mohammad Alzoubi</p>
-// 		</div>
-// 	</div>
-// 	<div className="card1">
-// 		<img src="https://picsum.photos/200" alt="img" className="image"/>
-// 		<div className="data">
-// 			<p>Mohammad Alzoubi</p>
-// 		</div>
-// 	</div>
-// </div>

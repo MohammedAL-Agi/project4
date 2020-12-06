@@ -20,10 +20,10 @@ iframe{
 }
 
 
-@media screen and (min-width: 310px) and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 280px) {
     iframe {
-        width: 372px;
-        height: 300px;
+        width: 280px;
+        height: 200px;
     }
     .youtube{
         margin: 0;

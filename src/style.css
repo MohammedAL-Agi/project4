@@ -163,6 +163,13 @@ footer {
 	align-items: center;
 }
 
+.home___footer{
+	color: #FFF;
+	font-size: 1.25em;
+	font-family: 'Sansita Swashed', cursive;
+	color: var(--Second-color);
+}
+
 .footer__pages {
 	color: #fff;
 }

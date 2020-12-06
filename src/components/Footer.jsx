@@ -5,6 +5,7 @@ import Youtube from '../Images/youtube.png';
 import Linkden from '../Images/linkedin.png';
 import Gram from '../Images/instgram.png';
 import Whatsapp from '../Images/whatsapp.png';
+import {Link} from 'react-router-dom';
 function Footer() {
 	return (
 		<footer>
@@ -38,8 +39,12 @@ function Footer() {
 			</div>
 			<div className="footer__right">
 				<ul>
-					<li>Home</li>
-					<li>Services</li>
+					<Link to="/">
+						<li className="home___footer">Home</li>
+					</Link>
+					<Link to="/Services">
+						<li className="home___footer">Services</li>
+					</Link>
 				</ul>
 			</div>
 		</footer>

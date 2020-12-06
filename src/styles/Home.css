@@ -12,6 +12,7 @@
 }
 
 /* color: var(--First-color); */
+/*  */
 
 /* font-family: 'Sansita Swashed',
         cursive; */
@@ -54,6 +55,9 @@
 	font-family: 'Sansita Swashed', cursive;
 	text-align: center;
 	padding-bottom: 3rem;
+	color: var(--Second-color);
+    text-shadow: 2px 2px 2px var(--Seventh-color);
+    font-size: 2.5rem;
 }
 
 .Our_services {
@@ -80,6 +84,8 @@
 
 .user-name-services {
 	font-size: 1.3em;
+	font-weight: bold;
+	color: var(--First-color);
 }
 
 .profile .profile-img {
@@ -97,10 +103,16 @@
 
 .user-name {
 	font-size: 1em;
+	font-weight: bold;
 }
 
-.our_amazing_team h3 {
+.our_amazing_team h2 {
 	padding-bottom: 3rem;
+	font-family: 'Sansita Swashed', cursive;
+
+	color: var(--Second-color);
+    text-shadow: 2px 2px 2px var(--Seventh-color);
+    font-size: 2.5rem;
 }
 
 .Our_team {
@@ -122,6 +134,10 @@
 	font-family: 'Sansita Swashed', cursive;
 	text-align: center;
 	padding-top: 3rem;
+
+	color: var(--Second-color);
+    text-shadow: 2px 2px 2px var(--Seventh-color);
+    font-size: 2.5rem;
 }
 
 .content {

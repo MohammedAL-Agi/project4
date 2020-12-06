@@ -69,7 +69,7 @@ function Profile() {
 							<img src={storedImage} alt="booked chalet" />
 						</div>
 						<div className="chalet__name_">
-							<span style={{ fontStyle: 'bold', fontSize: 20 }}>
+							<span style={{ fontStyle: 'bold' }}>
 								{storedChalet}
 							</span>
 						</div>
