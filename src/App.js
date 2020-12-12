@@ -19,10 +19,24 @@ localStorage.setItem(
 	JSON.stringify({ name: '', password: '', email: '', phoneNumber: '' })
 );
 
-localStorage.setItem('Data', JSON.stringify({ name: '', info: '' }));
+localStorage.setItem(
+	'Data',
+	JSON.stringify({
+		weather: 'Amman',
+		price: '',
+		name: '',
+		info: '',
+		img: '',
+		phone: '',
+		startDate: '',
+		numOfPeople: '',
+		location: '',
+		vissible: false,
+	})
+);
 function App() {
 	return (
-		<Router basename="/">
+		<HashRouter basename="/">
 			<div className="big__container">
 				<Mynav />
 				<Switch>
@@ -34,7 +48,7 @@ function App() {
 				</Switch>
 				<Footer />
 			</div>
-		</Router>
+		</HashRouter>
 	);
 }
 
